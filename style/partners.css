@@ -1,0 +1,223 @@
+main {
+    background-color: #0045860f;
+}
+
+#partners_Section {
+
+    .partners_Section_banner {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .partners_Page_Banner_Image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .partners_Page_Banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.55); 
+        z-index: 1;
+    }
+
+    .partners_Page_banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        z-index: 2;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .partners_Page_banner-content h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px !important;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .banner-content p {
+        font-size: 22px;
+        line-height: 1.6;
+        opacity: 0.9;
+    }
+}
+
+/* breadcrumb Start */
+
+.breadcrumb {
+    position: absolute;
+    bottom: 10px;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    display: flex;
+    box-shadow: 0 8px 14px -2px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        background-color: #fff !important;
+    padding: 0.5rem 1.5rem !important;
+    border-radius: 35px !important;
+    width: max-content;
+    margin: 50px auto 0 auto;
+}
+
+.breadcrumb-links {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.breadcrumb-links > li:nth-child(n + 4) {
+    display: none;
+}
+
+.breadcrumb-box {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-link {
+    color: #9ca3af;
+}
+
+.breadcrumb-box:hover > *:not(.breadcrumb-icon) {
+    color: #004586;
+}
+
+.breadcrumb-icon,
+.breadcrumb-icon-home {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #9ca3af;
+}
+
+/* .breadcrumb-links li:first-child .breadcrumb-text {
+    display: none;
+} */
+
+.breadcrumb-text {
+    margin-left: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+@media screen and (min-width: 640px) {
+
+    .breadcrumb-links > li:nth-child(n + 4) {
+        display: block;
+    }
+
+    .breadcrumb-links li:first-child .breadcrumb-text {
+        display: block;
+    }
+}
+
+/* breadcrumb Start */
+
+
+.partners {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.our_Partners_Title {
+    font-size: 14px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 48px;
+    font-weight: 600;
+}
+
+.our_Partners_Cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 32px;
+    align-items: center;
+}
+
+.our_Partners_Card {
+    height: 120px;
+    background: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+
+    transition: all 0.3s ease;
+}
+
+.our_Partners_Card img {
+    max-width: 200px;
+    max-height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.75;
+    transition: all 0.3s ease;
+}
+
+.our_Partners_Card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.our_Partners_Card:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+
+
+
+
+    /* Lazy loading Blogs And News Start */
+
+    .blogs_Hero_Card {
+        display: none;
+    }
+    
+    .blogs_Hero_Card.visible {
+        display: block;
+    }
+    
+    #loading {
+        text-align: center;
+        font-size: 16px;
+        color: #555;
+        margin: 20px 0;
+
+        img {
+            width: 100px;
+            margin: auto;
+        }
+    }
+
+    .blogs_Hero_Card {
+        display: none;
+    }
+
+    .blogs_Hero_Card.visible {
+        display: block;
+    }
+    
+
+    /* Lazy loading Blogs And News End */
