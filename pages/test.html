@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Dronların satışı" />
+        <title>BIMEX-Official Website</title>
+        <link rel="stylesheet" href="../style/style.css" />
+        <link rel="stylesheet" href="../style/index.css" />
+        <meta name="description" content="DJI technology empowers us to see the future of possible. Learn about our consumer drones like DJI Mavic 3 Pro, DJI Mini 4 Pro, DJI Air 3S, DJI Flip; handheld products like Osmo Action 6, Osmo Mobile 8, Osmo Nano, DJI Mic 3, Osmo 360, Osmo Pocket 3,  that capture smooth photos and videos; audio products like DJI Mic Mini for wireless recording; and professional cinematography tools like Ronin camera stabilizers and Inspire drones.">
+        <!-- FavIcon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/logo/BIMEXlogoSVG1.svg"
+        />
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <!-- Boxicon -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        />
+
+        <!-- Data aos animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <!-- Slick slider -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+
+        <style>
+
+            body {
+  margin: 0;
+  font-family:arial;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.scroll-wrap {
+  position: relative;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.scroll-wrap li {
+  height: 100vh;
+}
+.movie {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background:#111;
+}
+.movie .bg {
+  width: 100vw;
+  height: 100vh;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.movie .bg img {
+/*   height:100vh; */
+  transform: scale(1.2);
+  width: 100%;
+  transition: 1s;
+}
+.movie.step-2 .bg img {
+  transform: scale(1.1);
+}
+.movie.step-3 .bg img {
+  transform: scale(1);
+}
+.story,
+.actor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+}
+.story:before,
+.actor:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+}
+.story-content,
+.actor ul {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 10%;
+  width: 600px;
+  transform: scale(2);
+  transition: 1s;
+}
+.actor ul{
+  margin-bottom: 20%;
+}
+.actor ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+.actor ul li + li {
+  margin-left: 40px;
+}
+.movie.step-2 .story,
+.movie.step-3 .story {
+  opacity: 1;
+}
+.movie.step-2 .story-content {
+  transform: scale(1);
+}
+.movie.step-3 .story-content {
+  transform: scale(0.5);
+}
+.movie.step-3 .actor {
+  opacity: 1;
+}
+.movie.step-3 .actor ul {
+  transform: scale(1);
+}
+
+
+        </style>
+    </head>
+    <body>
+
+    <div class="movie">
+  <div class="bg"><img src="../assets/img/Banner1.jpeg" alt="">
+  </div>
+  <div class="story">
+    <div class="story-content">
+      <h2>Wonder Woman</h2>
+      <h4>Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, when a pilot crashes on their shores and tells of a massive conflict raging in the outside world, Diana leaves her home, convinced she can stop the threat. Fighting alongside man in a war to end all wars, Diana will discover her full powers and her true destiny.</h4>
+    </div>
+  </div>
+  <div class="actor">
+    <ul>
+      <li>
+        <h2>Director</h2>
+        <h4>Patty Jenkins</h4>
+      </li>
+      <li>
+        <h2>Writers</h2>
+        <h4>Allan Heinberg, Zack Snyder</h4>
+      </li>
+      <li>
+        <h2>Stars</h2>
+        <h4>Gal Gadot, Chris Pine</h4>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<ul class="scroll-wrap">
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    lasScrTop = 0;
+opa = 1;
+sca = 5;
+$(window).scroll(function () {
+  winTop = $(this).scrollTop();
+  winMid = $(window).height() / 2 + winTop;
+  winBot = $(window).height() + winTop;
+  // scroll到li,執行動態
+  $(".scroll-wrap li").each(function () {
+    liHei = $(this).height();
+    liOff = $(this).offset();
+    liTop = liOff.top;
+    liBot = liTop + liHei;
+    if (liBot <= winMid || liTop >= winBot) {
+      // li滑出視窗時移除 inView
+      $(this).removeClass("inView");
+    } else if (liTop <= winMid) {
+      // li滑到中間時，加入 inView
+      $(this).addClass("inView");
+    }
+    inViewEq = $(".inView").index() + 1;
+    console.log(inViewEq);
+    $(".movie")
+      .attr("class", "")
+      .addClass("movie step-" + inViewEq);
+  });
+  // 判斷scroll往上滑或往下滑
+  if (winTop > lasScrTop) {
+    // 往下滑
+  } else {
+    // 往上滑
+  }
+  lasScrTop = winTop;
+});
+
+</script>
+
+</body>
+</html>

@@ -665,9 +665,14 @@ a.cta-button {
         height: 30px !important;
       }
   }
+  
+  
+    .cs-slider--item {
+      height: 35vh !important;
+    }
 
     .cs-slider--item .cs-slider--image {
-      height: 700px !important;
+        background-position: top center !important; /* məhsul yuxarıda qalır */
     }
 
     .cs-slider--item .cs-slider--inner {
@@ -744,13 +749,8 @@ a.cta-button {
     align-items: center;
   }
 
-  .cs-photography--slider .cs-slider--item {
-    height: 700px !important;
-  }
+  
 
-  .cs-photography--slider {
-    height: 700px !important;
-  }
 }
 
 .brand {
