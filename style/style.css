@@ -928,9 +928,9 @@ a.cta-button {
     margin: 10px !important;
   }
 
-  .menu .menu__inner .menu__item:not(:last-child) {
+  /* .menu .menu__inner .menu__item:not(:last-child) {
     border-bottom: 1px solid #dddddd;
-  }
+  } */
 
   .submenu.megamenu__text {
     min-height: 80vh !important;
