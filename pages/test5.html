@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Dronların satışı" />
+        <title>BIMEX-Official Website</title>
+        <meta name="description" content="DJI technology empowers us to see the future of possible. Learn about our consumer drones like DJI Mavic 3 Pro, DJI Mini 4 Pro, DJI Air 3S, DJI Flip; handheld products like Osmo Action 6, Osmo Mobile 8, Osmo Nano, DJI Mic 3, Osmo 360, Osmo Pocket 3,  that capture smooth photos and videos; audio products like DJI Mic Mini for wireless recording; and professional cinematography tools like Ronin camera stabilizers and Inspire drones.">
+        <!-- FavIcon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/logo/BIMEXlogoSVG1.svg"
+        />
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <!-- Boxicon -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        />
+
+        <!-- Data aos animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <!-- Slick slider -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+
+        
+        
+        <style>
+
+            *,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --color-dark: #202330;
+  --color-white: #fff;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-dark);
+}
+
+header {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 64px 20px;
+  color: white;
+  text-align: center;
+  
+  p {
+    margin-bottom: 16px;
+  }
+  
+  h1 {
+    margin-bottom: 24px;
+    font-size: 44px;
+  }
+  
+  div {
+    margin-bottom: 24px;
+    font-sizer: 18px;
+    line-height: 32px;
+  }
+  
+  a {
+    font-size: 24px;
+    color: var(--color-white);
+    opacity: 1;
+    transition: opacity .3s linear;
+    
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.l-cards {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  margin-top: 20px;
+  width: 100%;
+  height: 90vh;
+  min-height: 600px;
+  background-color: white;
+  border: 1px solid var(--color-dark);
+  
+  .c-card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    
+    .c-card__tagline {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    
+    .c-card__title {
+      font-size: 36px;
+    }
+    
+    .c-card__excerpt {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    .c-card__cta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 32px;
+      
+      a {
+        width: max-content;
+        padding: 12px 24px;
+        border: 1px solid black;
+        color: black;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+    
+  .c-card__figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.spacer {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <section>
+            <header>
+                <p>Next-Generation Drone Solutions</p>
+
+                <h1>Advanced UAV Technology for Every Mission</h1>
+
+                <div>
+                    We deliver cutting-edge drone systems for consumer, enterprise, agriculture, and defense
+                    applications. From aerial imaging to smart monitoring and heavy-load logistics, our solutions
+                    combine reliability, precision, and innovation.
+                </div>
+
+                <a href="/solutions.html">
+                    Explore Our Drone Solutions
+                </a>
+            </header>
+
+            <div class="l-cards">
+
+                <!-- CARD 1 -->
+                <div class="c-card">
+                <div class="c-card__description">
+                    <div class="c-card__tagline">
+                    DJI Consumer Series
+                    </div>
+
+                    <h1 class="c-card__title">
+                    Consumer Drones
+                    </h1>
+
+                    <div class="c-card__excerpt">
+                    DJI Mini, Air və Mavic seriyaları gündəlik istifadə, səyahət və kontent yaradıcıları üçün
+                    yüngül, təhlükəsiz və yüksək keyfiyyətli uçuş təcrübəsi təqdim edir.
+                    </div>
+
+                    <div class="c-card__cta">
+                    <a href="#">Discover Series</a>
+                    </div>
+                </div>
+
+                <figure class="c-card__figure">
+                    <img src="https://www-cdn.djiits.com/dps/bf05921b982ed9d8a08965bc0529e216.jpg" alt="DJI Consumer Drones">
+                </figure>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="c-card">
+                <div class="c-card__description">
+                    <div class="c-card__tagline">
+                    DJI Enterprise
+                    </div>
+
+                    <h1 class="c-card__title">
+                    Professional Drones
+                    </h1>
+
+                    <div class="c-card__excerpt">
+                    Matrice və Inspire seriyaları sənaye, kino, xəritələmə və təhlükəsizlik sahələrində
+                    maksimum performans və stabil uçuş imkanları yaradır.
+                    </div>
+
+                    <div class="c-card__cta">
+                    <a href="#">View Enterprise</a>
+                    </div>
+                </div>
+
+                <figure class="c-card__figure">
+                    <img src="https://images.pexels.com/photos/20339629/pexels-photo-20339629.jpeg" alt="DJI Professional Drones">
+                </figure>
+                </div>
+                
+                <!-- CARD 3 -->
+                <div class="c-card">
+                <div class="c-card__description">
+                    <div class="c-card__tagline">
+                    Advanced Defense Solutions
+                    </div>
+
+                    <h1 class="c-card__title">
+                    Military Drones
+                    </h1>
+
+                    <div class="c-card__excerpt">
+                    Strateji müşahidə, sərhəd təhlükəsizliyi və taktiki əməliyyatlar üçün hazırlanmış
+                    yüksək dözümlü və uzun mənzilli pilotsuz uçuş aparatları.
+                    </div>
+
+                    <div class="c-card__cta">
+                    <a href="#">Defense Solutions</a>
+                    </div>
+                </div>
+
+                <figure class="c-card__figure">
+                    <img src="https://trendsresearch.org/wp-content/uploads/2024/06/The-Golden-Age-of-Drones-copy.jpg" alt="Military Drone">
+                </figure>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="c-card">
+                <div class="c-card__description">
+                    <div class="c-card__tagline">
+                    Tactical Systems
+                    </div>
+
+                    <h1 class="c-card__title">
+                    Military Technologies
+                    </h1>
+
+                    <div class="c-card__excerpt">
+                    Dron platformaları üçün radar sistemləri, optik sensorlar, istilik kameraları
+                    və inteqrasiya olunmuş hərbi texnologiyalar.
+                    </div>
+
+                    <div class="c-card__cta">
+                    <a href="#">Explore Tech</a>
+                    </div>
+                </div>
+
+                <figure class="c-card__figure">
+                    <img src="https://www.nsin.us/wp-content/uploads/2024/12/Artificial-Intelligence-AI-and-Autonomous-Systems-US-Army.jpg" alt="Military Technology">
+                </figure>
+                </div>
+                
+                <!-- CARD 5 -->
+                <div class="c-card">
+                <div class="c-card__description">
+                    <div class="c-card__tagline">
+                    DJI Agriculture
+                    </div>
+
+                    <h1 class="c-card__title">
+                    Agriculture Drones
+                    </h1>
+
+                    <div class="c-card__excerpt">
+                    Kənd təsərrüfatı üçün gübrələmə, dərmanlama və sahə monitorinqi dronları,
+                    həmçinin batareyalar, payload-lar və smart aksesuarlar.
+                    </div>
+
+                    <div class="c-card__cta">
+                    <a href="#">See Solutions</a>
+                    </div>
+                </div>
+
+                <figure class="c-card__figure">
+                    <img src="https://stag-www-cdn.djiits.com/pre/dps/9cac311bd4844eedc36ab25e5f15c6c5.jpg?w=1184&h=800" alt="DJI Agriculture Drone">
+                </figure>
+                </div>
+
+            </div>
+
+
+        </section>
+
+</body>
+</html>
+
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+    <script>
+
+        // Seleccionar todas las tarjetas y definir la distancia de stick
+const cards = gsap.utils.toArray(".c-card");
+const lastCardIndex = cards.length - 1;
+
+// Crear el ScrollTrigger para la primera y última tarjeta
+const firstCardST = ScrollTrigger.create({
+  trigger: cards[1],
+  start: "center center"
+});
+
+const lastCardST = ScrollTrigger.create({
+  trigger: cards[cards.length - 1],
+  start: "center center"
+});
+
+// Iterar sobre cada tarjeta
+cards.forEach((card, index) => {
+  const scale = index === lastCardIndex ? 1 : 0.5;
+  const scaleDown = gsap.to(card, {
+    scale: scale,
+  });
+
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top top",
+    end: () => lastCardST.start,
+    pin: true,
+    pinSpacing: false,
+    scrub: 0.5,
+    ease: "none",
+    animation: scaleDown,
+    toggleActions: "restart none none reverse"
+  });
+});
+    </script>
+
+</body>
+</html>
