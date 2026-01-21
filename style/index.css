@@ -604,9 +604,286 @@ main {
     z-index: 1;
 }
 
+
+/* Banner Slider Start */
+/* ===========================
+   Banner Slider – FINAL CSS
+   =========================== */
+
+/* Root */
 .cs-photography--slider {
-    margin-top: 0px;
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
+/* Swiper base */
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-wrapper,
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===========================
+   SLIDE ITEM
+   =========================== */
+
+.cs-photography--slider .cs-slider--item {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Desktop full screen */
+    overflow: hidden;
+}
+
+/* ===========================
+   BACKGROUND IMAGE
+   =========================== */
+
+.cs-slider--item .cs-slider--image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform 2s linear;
+    transform: scale(0.9);
+}
+
+/* Zoom animation */
+.cs-photography--slider
+.swiper-slide-active
+.cs-slider--image {
+    transform: scale(1.01);
+}
+
+/* ===========================
+   CONTENT WRAPPER
+   =========================== */
+
+.cs-slider--item .cs-slider--inner {
+    position: absolute;
+    inset: 100px;
+    border: 1px solid #ffffff33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.cs-slider--inner .cs-heading {
+    text-align: center;
+    position: relative;
+}
+
+/* ===========================
+   TITLE
+   =========================== */
+
+.cs-item--inner .cs-item--title {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 2.5s ease;
+    letter-spacing: -1px;
+    margin: 10px 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.cs-item--inner .cs-item--title:before,
+.cs-item--inner .cs-item--title:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 135px;
+    height: 1px;
+    background-color: #ffffff4d;
+}
+
+.cs-item--inner .cs-item--title:before {
+    left: -150px;
+}
+
+.cs-item--inner .cs-item--title:after {
+    right: -150px;
+}
+
+/* Active animation */
+.cs-photography--slider
+.swiper-slide-active
+.cs-item--title {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ===========================
+   BOTTOM CONTROLS
+   =========================== */
+
+.cs-photography--slider .cs-bottom--pane {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+/* Pagination */
+.cs-swiper--dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(10px);
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.swiper-pagination-bullet {
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    inset: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.swiper-pagination-bullet-active {
+    border-color: #fff;
+    transform: scale(1.1);
+}
+
+/* Navigation */
+.cs-swiper--navigation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  left: 50%;
+  right: 50px;
+  bottom: auto;
+  width: 43%;
+  transform: translateX(-50%);
+}
+
+.cs-swiper--navigation .cs-swiper--arrow {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  font-size: 10px !important;
+  color: #ffffff;
+  background-color: transparent;
+  border: 0px dashed #3c3c3c;
+  border-radius: 100%;
+  margin-top: 0px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px !important;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    .cs-item--inner .cs-item--title {
+        font-size: 54px;
+    }
+
+    .cs-item--inner .cs-item--title:before,
+    .cs-item--inner .cs-item--title:after {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .cs-item--inner .cs-item--title {
+        font-size: 32px;
+    }
+
+    /* .cs-swiper--navigation {
+        display: none;
+    } */
+
+    .cs-slider--item .cs-slider--inner {
+        inset: 60px;
+    }
+}
+
+/* MOBILE – KRİTİK HƏLL */
+@media (max-width: 768px) {
+
+    .cs-photography--slider .cs-slider--item {
+        min-height: unset;   /* <<< ƏN VACİB */
+        height: 65vw !important;
+        margin-top: 65px;
+
+    }
+
+    .cs-slider--item .cs-slider--image {
+        background-size: cover;
+        background-position: center top;
+        background-color: #000;
+        transform: none;
+    }
+
+    .cs-slider--item .cs-slider--inner {
+        inset: 20px;
+    }
+
+    .cs-item--inner .cs-item--title {
+        font-size: 24px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 460px) {
+    .cs-photography--slider .cs-slider--item {
+        height: 45vh;
+    }
+}
+
+
+/* Banner Slider End */
+
+
+
+
 
 .banner-text {
     position: relative;
