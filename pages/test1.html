@@ -189,6 +189,8 @@ p {
     fill: currentcolor;
 }
 
+
+
         </style>
     </head>
     <body>
@@ -196,7 +198,8 @@ p {
     <div class="external">
   <div class="horizontal-scroll-wrapper">
     <div class="img-wrapper slower">
-      <a href="https://altphotos.com/photo/stylish-parisian-cafe-terrace-279/" target="_blank" rel="noopener"><img src="../assets/img/droneWallpaper1.png" alt="">
+      <a href="" target="_blank" rel="noopener"><img src="../assets/img/droneWallpaper2.png" alt="">
+      <h1 style="font-size: 2rem;">Consumer</h1>
       </a>
     </div>
 
@@ -208,7 +211,7 @@ p {
 
     <div class="img-wrapper slower vertical">
       <a href="https://altphotos.com/photo/clocks-shop-exposition-window-reflecting-the-streets-277/" target="_blank" rel="noopener">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/windowshopclock.jpg" alt="">
+        <img src="../assets/img/slider-mobile-image-3.webp" alt="">
       </a>
     </div>
 
@@ -232,7 +235,7 @@ p {
 
     <div class="img-wrapper faster1">
       <a href="https://altphotos.com/photo/old-man-leaning-over-the-barrier-looking-at-the-river-265/" target="_blank" rel="noopener">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/old-man-river.jpg" alt="">
+        <img src="../assets/img/slider-mobile-image-4.webp" alt="">
       </a>
     </div>
     
@@ -271,42 +274,36 @@ p {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    lasScrTop = 0;
-opa = 1;
-sca = 5;
-$(window).scroll(function () {
-  winTop = $(this).scrollTop();
-  winMid = $(window).height() / 2 + winTop;
-  winBot = $(window).height() + winTop;
-  // scroll到li,執行動態
-  $(".scroll-wrap li").each(function () {
-    liHei = $(this).height();
-    liOff = $(this).offset();
-    liTop = liOff.top;
-    liBot = liTop + liHei;
-    if (liBot <= winMid || liTop >= winBot) {
-      // li滑出視窗時移除 inView
-      $(this).removeClass("inView");
-    } else if (liTop <= winMid) {
-      // li滑到中間時，加入 inView
-      $(this).addClass("inView");
-    }
-    inViewEq = $(".inView").index() + 1;
-    console.log(inViewEq);
-    $(".movie")
-      .attr("class", "")
-      .addClass("movie step-" + inViewEq);
-  });
-  // 判斷scroll往上滑或往下滑
-  if (winTop > lasScrTop) {
-    // 往下滑
-  } else {
-    // 往上滑
-  }
-  lasScrTop = winTop;
-});
+(function () {
+  const scroller = document.querySelector(".horizontal-scroll-wrapper");
 
+  if (!scroller) return;
+
+  let startY = 0;
+  let startScroll = 0;
+
+  scroller.addEventListener(
+    "touchstart",
+    function (e) {
+      startY = e.touches[0].clientY;
+      startScroll = scroller.scrollTop;
+    },
+    { passive: true }
+  );
+
+  scroller.addEventListener(
+    "touchmove",
+    function (e) {
+      const currentY = e.touches[0].clientY;
+      const deltaY = startY - currentY;
+
+      scroller.scrollTop = startScroll + deltaY;
+    },
+    { passive: true }
+  );
+})();
 </script>
+
 
 </body>
 </html>
