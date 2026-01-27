@@ -73,163 +73,175 @@ body {
   background: var(--color-dark);
 }
 
-header {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 64px 20px;
-  color: white;
-  text-align: center;
-  
-  p {
-    margin-bottom: 16px;
-  }
-  
-  h1 {
-    margin-bottom: 24px;
-    font-size: 44px;
-  }
-  
-  div {
-    margin-bottom: 24px;
-    font-sizer: 18px;
-    line-height: 32px;
-  }
-  
-  a {
-    font-size: 24px;
-    color: var(--color-white);
-    opacity: 1;
-    transition: opacity .3s linear;
-    
-    &:hover {
-      opacity: .8;
+#category_Hero_Section {
+
+        .category_Hero_Header {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 64px 20px;
+            color: white;
+            text-align: center;
+        
+        p {
+            margin-bottom: 16px;
+        }
+        
+        h1 {
+            margin-bottom: 24px;
+            font-size: 44px;
+        }
+        
+        div {
+            margin-bottom: 24px;
+            font-sizer: 18px;
+            line-height: 32px;
+        }
+        
+        a {
+            font-size: 24px;
+            color: var(--color-white);
+            opacity: 1;
+            transition: opacity .3s linear;
+            
+            &:hover {
+                opacity: .8;
+            }
+        }
     }
-  }
-}
 
-.l-cards {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+    .l-cards {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-.c-card {
-    /* display: grid; */
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* grid-gap: 24px; */
-    display: flex;
-    margin-top: 20px;
-    width: 100%;
-    height: 90vh;
-    min-height: 600px;
-    background-color: #1974BA;
-    border: 1px solid var(--color-dark);
-    border-radius: 10px;
-
-    .c-card__description {
+    .c-card {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 48px;
-        gap: 18px;
+        margin-top: 20px;
+        width: 100%;
+        height: 90vh;
+        min-height: 600px;
+        background-color: #1974BA;
+        border: 1px solid var(--color-dark);
+        border-radius: 10px;
+
+        .c-card__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 48px;
+            gap: 18px;
+            color: #ffffff;
+        }
+
+    .c-card__tagline {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .c-card__title {
+        font-size: clamp(32px, 4vw, 48px);
+        font-weight: 700;
+        line-height: 1.15;
+        margin: 0;
         color: #ffffff;
     }
 
-/* Tagline */
-.c-card__tagline {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/* Title */
-.c-card__title {
-    font-size: clamp(32px, 4vw, 48px);
-    font-weight: 700;
-    line-height: 1.15;
-    margin: 0;
-    color: #ffffff;
-}
-
-/* Excerpt */
-.c-card__excerpt {
-    max-width: 520px;
-    font-size: 16px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.85);
-}
-
-/* CTA */
-.c-card__cta {
-    margin-top: 28px;
-    display: flex;
-}
-
-.c-card__cta a {
-    padding: 14px 30px;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(6px);
-    transition: all 0.35s ease;
-}
-
-/* Hover */
-.c-card__cta a:hover {
-    background-color: #ffffff;
-    color: #000000;
-    border-color: #ffffff;
-    transform: translateY(-2px);
-}
-
-  }
-    
-  .c-card__figure {
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    border-top-right-radius: 9px;
-    border-bottom-right-radius: 9px;
-
-    img {
-      /* position: absolute; */
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .c-card__excerpt {
+        max-width: 520px;
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.85);
     }
-  }
+
+    .c-card__cta {
+        margin-top: 28px;
+        display: flex;
+    }
+
+    .c-card__cta a {
+        padding: 14px 30px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(6px);
+        transition: all 0.35s ease;
+    }
+
+    .c-card__cta a:hover {
+        background-color: #ffffff;
+        color: #000000;
+        border-color: #ffffff;
+        transform: translateY(-2px);
+    }
+
+    }
+    
+    .c-card__figure {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        border-top-right-radius: 9px;
+        border-bottom-right-radius: 9px;
+
+        img {
+            /* position: absolute; */
+            width: 100%;
+            width: 600px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
 
 
     @media screen and (max-width: 800px) {
 
-        .c-card {
-            display: flex;
-            flex-direction: column-reverse;
-            margin-top: 20px;
-            width: 100%;
-            height: 90vh;
-            min-height: 600px;
-            background-color: #1974BA;
-            border: 1px solid var(--color-dark);
-            border-radius: 10px;
-        }
+        #category_Hero_Section {
 
-        .c-card__figure {
-            border-top-left-radius: 9px;
-            border-top-right-radius: 9px;
-            border-bottom-right-radius: 0;
+            .category_Hero_Header {
+                padding: 60px 10px !important;
+            }
+
+            .c-card {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 20px;
+                width: 100%;
+                height: 90vh;
+                min-height: 600px;
+                background-color: #1974BA;
+                border: 1px solid var(--color-dark);
+                border-radius: 10px;
+            }
+
+            .c-card__description {
+                padding: 25px !important;
+            }
+
+
+            .c-card__figure {
+                border-top-left-radius: 9px;
+                border-top-right-radius: 9px;
+                border-bottom-right-radius: 0;
+            }
 
             img {
-                min-height: 600px;
+                width: 100% !important;
+                height: 350px !important;
+                object-fit: cover;
             }
+
         }
-        
+
     }
 
 
@@ -239,8 +251,8 @@ header {
     </head>
     <body>
 
-        <section>
-            <header>
+        <section id="category_Hero_Section">
+            <section class="category_Hero_Header">
                 <p>Next-Generation Drone Solutions</p>
 
                 <h1>Advanced UAV Technology for Every Mission</h1>
@@ -254,7 +266,7 @@ header {
                 <a href="/solutions.html">
                     Explore Our Drone Solutions
                 </a>
-            </header>
+            </section>
 
             <div class="l-cards">
 
@@ -402,39 +414,39 @@ header {
     <script>
 
         // Seleccionar todas las tarjetas y definir la distancia de stick
-const cards = gsap.utils.toArray(".c-card");
-const lastCardIndex = cards.length - 1;
+        const cards = gsap.utils.toArray(".c-card");
+        const lastCardIndex = cards.length - 1;
 
-// Crear el ScrollTrigger para la primera y última tarjeta
-const firstCardST = ScrollTrigger.create({
-  trigger: cards[1],
-  start: "center center"
-});
+        // Crear el ScrollTrigger para la primera y última tarjeta
+        const firstCardST = ScrollTrigger.create({
+            trigger: cards[1],
+            start: "center center"
+            });
 
-const lastCardST = ScrollTrigger.create({
-  trigger: cards[cards.length - 1],
-  start: "center center"
-});
+            const lastCardST = ScrollTrigger.create({
+                trigger: cards[cards.length - 1],
+                start: "center center"
+            });
 
-// Iterar sobre cada tarjeta
-cards.forEach((card, index) => {
-  const scale = index === lastCardIndex ? 1 : 0.5;
-  const scaleDown = gsap.to(card, {
-    scale: scale,
-  });
+            // Iterar sobre cada tarjeta
+            cards.forEach((card, index) => {
+                const scale = index === lastCardIndex ? 1 : 0.5;
+                const scaleDown = gsap.to(card, {
+                    scale: scale,
+                });
 
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top top",
-    end: () => lastCardST.start,
-    pin: true,
-    pinSpacing: false,
-    scrub: 0.5,
-    ease: "none",
-    animation: scaleDown,
-    toggleActions: "restart none none reverse"
-  });
-});
+            ScrollTrigger.create({
+                trigger: card,
+                start: "top top",
+                end: () => lastCardST.start,
+                pin: true,
+                pinSpacing: false,
+                scrub: 0.5,
+                ease: "none",
+                animation: scaleDown,
+                toggleActions: "restart none none reverse"
+            });
+        });
     </script>
 
 </body>
