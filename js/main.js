@@ -106,7 +106,7 @@ const filter_Scrolly = document.getElementById("filteredScroll");
 window.addEventListener("scroll", () => {
     const currentScroll = window.scrollY;
 
-    /* 🔒 iOS FIX: top-dayıqsa navbar həmişə görünsün */
+    /* IOS FIX: top-dayıqsa navbar həmişə görünsün */
     if (currentScroll <= 5) {
         header.style.top = "0px";
         filter_Scrolly.style.top = "70px";
