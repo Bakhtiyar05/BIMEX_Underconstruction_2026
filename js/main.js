@@ -100,28 +100,36 @@ window.addEventListener("resize", () => {
 /* Navbar hide on scroll Start */
 
 let lastScrollY = window.scrollY;
+const header = document.querySelector("header");
+const filter_Scrolly = document.getElementById("filteredScroll");
 
-window.addEventListener("scroll", function () {
-    const filter_Scrolly = document.getElementById("filteredScroll");
+window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
 
-    if (window.scrollY > lastScrollY) {
-        header.style.top = "-80px";
-        filter_Scrolly.style.top = "10px";
-        filter_Scrolly.style.transition = '.3s'
-    } else {
+    /* 🔒 iOS FIX: top-dayıqsa navbar həmişə görünsün */
+    if (currentScroll <= 5) {
         header.style.top = "0px";
         filter_Scrolly.style.top = "70px";
-        filter_Scrolly.style.transition = '.3s'
-        filter_Scrolly.style.position = 'sticky';
+        lastScrollY = 0;
+        return;
     }
 
-    /* Products Filter Button Start */
+    /* Scroll aşağı */
+    if (currentScroll > lastScrollY) {
+        header.style.top = "-80px";
+        filter_Scrolly.style.top = "10px";
+    }
+    /* Scroll yuxarı */
+    else {
+        header.style.top = "0px";
+        filter_Scrolly.style.top = "70px";
+    }
 
+    header.style.transition = "top .3s ease";
+    filter_Scrolly.style.transition = "top .3s ease";
 
-    /* Products Filter Button End */
-
-    lastScrollY = window.scrollY;
-});
+    lastScrollY = currentScroll;
+}, { passive: true });
 
 /* Navbar hide on scroll End */
 
