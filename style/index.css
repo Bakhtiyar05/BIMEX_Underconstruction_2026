@@ -1108,9 +1108,10 @@ BOTTOM CONTROLS
 
 #video_Banner video {
     width: 100%;
-    /* height: 500px; */
-    height: 100% !important;
+    height: 100%;
     object-fit: cover;
+    transform: translateZ(0);
+    will-change: transform;
     display: block;
 }
 
