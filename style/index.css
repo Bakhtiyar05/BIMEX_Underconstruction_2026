@@ -749,6 +749,7 @@ BOTTOM CONTROLS
     left: 50%;
     transform: translateX(-50%);
     transform: translateY(10px);
+    z-index: 9;
 }
 
 .swiper-pagination {
